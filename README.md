@@ -26,7 +26,7 @@ In this module, you will be required to use the [Shoelace component library](htt
   - THEN the counter value should change to 0
   - AND a confirmation message should be displayed that the counter has been reset
 
-<br >
+
 ## Getting Started:
 1. Clone repository
 ```
