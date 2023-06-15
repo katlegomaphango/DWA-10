@@ -25,3 +25,12 @@ In this module, you will be required to use the [Shoelace component library](htt
   - WHEN I click on the "Reset" button
   - THEN the counter value should change to 0
   - AND a confirmation message should be displayed that the counter has been reset
+
+
+## Getting Started:
+1. Clone repository
+```
+git clone https://github.com/katlegomaphango/DWA-10.git
+```
+2. Run localhost server
+3. Open index.html
