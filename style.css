@@ -111,6 +111,14 @@ body {
 .reset_button::part(base):hover {
     background: var(--color-medium-gray);
 }
+.alert_wrapper {
+    display: flex;
+    justify-content: center;
+}
+.alert::part(base) {
+    width: 50%;
+    margin-bottom: 1rem;
+}
 
 /* footer */
 .footer {
@@ -120,6 +128,7 @@ body {
     padding: 2rem;
     font-size: 0.8rem;
     text-align: center;
+    margin-top: 1rem;
 }
 
 .footer__link {
