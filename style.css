@@ -144,6 +144,26 @@ body {
     transform: translateY(-2%);
 }
 
+.reset {
+    display: flex;
+    justify-content: center;
+}
+
+.reset_button {
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.reset_button::part(base) {
+    color: var(--color-green);
+    border-color: var(--color-green);
+}
+
+.reset_button::part(base):hover {
+    background: var(--color-medium-gray);
+}
+
 /* footer */
 .footer {
     background: var(--color-dark-gray);
