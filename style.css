@@ -46,7 +46,7 @@ body {
     background: var(--color-dark-gray);
 }
 
-.counter__value {
+/* .counter__value {
     width: 100%;
     height: 15rem;
     text-align: center;
@@ -56,13 +56,13 @@ body {
     background: none;
     border-width: 0;
     border-bottom: 1px solid var(--color-light-gray);
-}
+} */
 
 .counter__actions {
     display: flex;
 }
 
-.counter__buttons {
+/* .counter__buttons {
     background: none;
     width: 50%;
     border-width: 0;
@@ -84,6 +84,64 @@ body {
 
 .counter__buttons:disabled {
     opacity: 0.2;
+} */
+
+/* sl btns */
+
+/* 
+.counter__value {
+    width: 100%;
+    height: 15rem;
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 900;
+    color: var(--color-white);
+    background: none;
+    border-width: 0;
+    border-bottom: 1px solid var(--color-light-gray);
+}
+*/
+
+.counter__value::part(base) {
+    width: 100%;
+    height: 15rem;
+    font-size: 10rem;
+    font-weight: 900;
+    background: none;
+    border-width: 0;
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.counter__value::part(input) {
+    width: 100%;
+    height: 100%;
+    color: var(--color-white);
+    text-align: center;
+    justify-items: center;
+}
+
+.counter__buttons{
+    width: 50%;
+}
+.counter__buttons::part(base) {
+    background: none;
+    border-width: 0;
+    font-size: 3rem;
+    height: 10rem;
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.counter__buttons.first {
+    border-right: 1px solid var(--color-light-gray);
+}
+
+.counter__buttons::part(label) {
+    color: black;
+}
+
+.counter__buttons::part(base):active {
+    background: var(--color-medium-gray);
+    transform: translateY(-2%);
 }
 
 /* footer */

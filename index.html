@@ -15,6 +15,10 @@
     <!-- js -->
     <script src="./scripts.js" defer type="module"></script>
 
+    <!-- shoelace style -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace-autoloader.js"></script>
+
     <title>Tally Count App</title>
 </head>
 <body>
@@ -22,7 +26,7 @@
         <h1 class="header__title">Tally Count App</h1>
     </header>
 
-    <aside class="controls">
+    <!-- <aside class="controls">
         <label for="">
             <span>Display</span>
             <select name="" id="">
@@ -39,13 +43,16 @@
                 <option value="">Count 3</option>
             </select>
         </label>
-    </aside>
+    </aside> -->
 
     <main class="counter">
-        <input class="counter__value" data-key="number" readonly value="0">
+        <!-- <input class="counter__value" data-key="number" readonly value="0"> -->
+        <sl-input class="counter__value" data-key="number" readonly value="0"></sl-input>
         <div class="counter__actions">
-            <button data-key="subtract" class="counter__buttons first">-</button>
-            <button data-key="add" class="counter__buttons">+</button>
+            <!-- <button data-key="subtract" class="counter__buttons first">-</button> -->
+            <sl-button class="counter__buttons first">-</sl-button>
+            <!-- <button data-key="add" class="counter__buttons">+</button> -->
+            <sl-button class="counter__buttons">+</sl-button>
         </div>
     </main>
 
